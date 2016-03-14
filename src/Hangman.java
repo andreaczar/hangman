@@ -47,7 +47,6 @@ public class Hangman extends Canvas {
     public Hangman(){
         int wordIndex = new Random().nextInt(words.length);
         word = words[wordIndex];
-        System.out.println(word);
         setupGuessWord();
     }
 
@@ -308,6 +307,7 @@ public class Hangman extends Canvas {
 
         Container container = jFrame.getContentPane();
 
+        System.out.println("Welcome to Hangman!");
         System.out.println("Rules of the game:\n" +
                 "Your job is to try to find out the secret word by guessing one letter at a time. \n" +
                 "But beware! If you incorrectly select a letter that is not in the secret word, \n" +
